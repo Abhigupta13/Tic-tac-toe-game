@@ -12,11 +12,7 @@ const changeTurn=()=>{
 }
 
 //Fuction to check win
-
-const checkWin =()=>{
-    let boxtexts = document.getElementsByClassName('boxtext');
-
-let wins = [
+var wins = [
     [0,1,2,5,5,0],
     [3,4,5,5 ,15,0],
     [6,7,8,5,25,0],
@@ -26,12 +22,17 @@ let wins = [
     [0,4,8,5,15,45],
     [2,4,6,5,15,135],
 ]
+const checkWin =()=>{
+    let boxtexts = document.getElementsByClassName('boxtext');
+
+
 wins.forEach(e =>{
     if((boxtexts[e[0]].innerText=== boxtexts[e[1]].innerText) && (boxtexts[e[1]].innerText=== boxtexts[e[2]].innerText) && (boxtexts [e[0]].innerText!== "")){
         document.querySelector('.Info').innerText = boxtexts[e[0]].innerText +" has won the game"
         isGameOver =true;
         document.querySelector('.imgBox').getElementsByTagName('img')[0].style.height ="200px"; 
-        document.querySelector(".line").style.width ="20vw";
+       document.querySelector('#lineId').classList.add("line")
+        // document.querySelector(".line").style.width ="20vw";
  
         document.querySelector(".line").style.transform =`translate( ${e[3]}vw,${e[4]}vw) rotate(${e[5]}deg)`
         gameover.play();
@@ -39,10 +40,16 @@ wins.forEach(e =>{
 })
 
 }
-
+const mobile=document.querySelector('.screen').addEventListener('click',()=>{
+    wins.forEach(e=>{
+        e[3]+=4;
+        e[4]+=14;
+        console.log(wins);
+    })
+})
 
 // Main Game logic
-music.play();
+// music.play();
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
     let boxtext = element.querySelector('.boxtext');
@@ -71,5 +78,6 @@ reset.addEventListener('click',()=>{
      document.querySelector(".line").style.width ="0vw";
      document.getElementsByClassName("Info")[0].innerText ="Turn for "+ turn;
      document.querySelector('.imgBox').getElementsByTagName('img')[0].style.height ="0"; 
+     document.querySelector('#lineId').classList.remove("line")
     })
 

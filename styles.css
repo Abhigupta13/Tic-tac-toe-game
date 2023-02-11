@@ -1,4 +1,6 @@
-
+h1{
+    text-align: center;
+}
 *{
     margin: 0;
     padding: 0;
@@ -67,13 +69,15 @@ nav ul{
 .bt-0{
     border-top: 0;
 }
-.line{
-    background-color: rgb(207, 38, 246);
-    width: 0;
+#lineId{
+      width: 0;
     height:3px;
     position: absolute;
+}
+.line{
+    background-color: rgb(207, 38, 246);
+    width: 20vw!important;
     transition: width 1s ease-in-out;
-
 }
 @media screen and (max-width: 900px){
     .gameContainer{
@@ -91,11 +95,12 @@ nav ul{
         grid-template-columns: repeat(3,20vw);
       
     }
-    /* .line{
-        width: 61vw;
-        transform: translate(-1vw, 29vw) rotate(45deg);
-
-    } */
+    .line{
+        width: 42vw!important;
+    }
+    .boxtext{
+        padding-top: 5vw;
+    }
 }
 #reset{
     padding: 6px 20px;
@@ -106,4 +111,19 @@ nav ul{
     font-family: 'baloo Da 2', cursive;
     font-size: 15px;
     font-weight: bolder;
+}
+.screen{
+    background-color: blue;
+    display: relative;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    margin-left: 160px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 20%;
+    height: 40px;
 }
