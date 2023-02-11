@@ -67,7 +67,7 @@ nav ul{
 .bt-0{
     border-top: 0;
 }
-#lineId{
+.line{
     background-color: rgb(207, 38, 246);
     width: 0;
     height:3px;
@@ -91,11 +91,11 @@ nav ul{
         grid-template-columns: repeat(3,20vw);
       
     }
-    #line{
+    /* .line{
         width: 61vw;
         transform: translate(-1vw, 29vw) rotate(45deg);
 
-    }
+    } */
 }
 #reset{
     padding: 6px 20px;
