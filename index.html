@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-tac-toe</title>
+    <title >Tic-tac-toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png/jpeg" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA81BMVEX///88OkArK9S1AB47OT84Njzo6OheXWFdW2D8/Py0ABmyAAApKdS0ABcmJtO1AAAcHNQjI9OzAA3z2Nzk5Pn5+f76+v4vLTQXF9X09P3n5/rg4PjsxMrz2d377/EfH9PQa3izAAjZ2ffV1dYpJi6AgOTCNUjkp6/Pz/Svr+0KCtPt7fu6DylQUNyVlehXV9w0NNbIyPPqusJISNu+IzmPj+y0tO5OTFGXlpmFhIekpO3JTVu/v/Luyc89Pdnlrraura9ram1jY+DWfoppaeGlpetycuHFxcbcjZfIRVXDKj6SkujfmqPPcnyIiOZwcOLQYnBKsvXbAAAQEElEQVR4nO2d+0PaSBDHMaAVTGICKAHU+BZQEKv1Lddyldrzqvf//zWXAElmn5mFFJXm+5sGhvlkN/uY7OxmMglo7+Zq4ep6KQlTYy1dexZv9hK0OI3yN/uLuYVcpfI1MZNfKxXP4uL+TT4xk9PoxvPGV27/a0IWv+6PLVZuErI4lX6M3fEcWkymoi5VQov7PxKxOJ0+LS4EqlwnYvG6Elpc/JSIxamUX8hF/nxLxOS36J7lFt7+SVzK5ZK+46BW5HJJttCTiSBcTuKO55dTwtkqJVRXSjhrpYTqSglnrZRQXSnhrPVhCUtHT0clzBUVwnrj8rZze9moSz8lJET7hNDW3c6Kp7tN5srm3Qp5BU24+9zWW45lWU5LP33eFX9QQMj8MuXTzt0WFs/7SraY9VU0NqgrD8XxlWxwy5CEZ6eWZeraSLppWe0zNcJS4FPxgfbJGF8psPACbV0Y2ZEKOyTixk5hfMW42FIgrPdbdoAXQLZOBZWVS7h1ouBTrP5dyQYqFKG5jUIhvLLyL56wabsaK9tu4gmhT8Zn6FOR9SlWd0aWi7hhgAvGTzThs6NzAL1ydJ7RhD/hT0OfAGDWuMMBbv0DrAHEqDoM/59dRxIeCAB9xAMkYT5L/HZYUQnArPEPrpqShKE50li2cJLHEXZaAj5frQ6S8IT88fFtJ286mpCopSHihkEYC2tEHOG9sARHpXiPImR8GiJSgOhamjlayTLmHlZJY9iW5rhrSgA1zewdowj/pX1affC6LtqnIyTh1mGRMmc8USWYLR7mUYQHlhRQ0yzmUeQS5lE+ofv8zROyTmSzO9TfxknQu8oJ63GAHiLdLfJ7fNanotAnDGKBNkcZC4c0MYRUEeq25VhU388UomDUVsrG+GQoAPLuGGksGuZKCY81gsZ2T58fn09dm6DWqijCTEl628FNnx7ROMHOLe4dorROR+Pt3T5RsnRzKp5bYH2aFpE0JiU8gKM1axBeHUBEl6qm4vmhGFG5BIeIgkphFAljUsJT0FWY51FtrJ7DC6dYwkzJEPhkTAAoumP03ZIRHvfAY2jByngPClGnukTZHJ/f3ExQRUfiVVTGmIywbEaEZINSBU2QbpbRhNzbPjGgPxOmVWCMyQjrVsRhnhOXQDXVXbJHlMdpSicFximlboLQA6dK0DNsNGGbuNQGhJYK4QOnktI+obVBj0X9+7VCBTaktRR07nqXuNQFV2yFWkoPtoc+rdLBFiwgPe4bmSuS5qQtDeSwGuBKw4Ls+JZmgx5sc31Cihm5B+bIOImMcA3URc0dgCsD0FGa7XUs4QOnBCdG5FUHnjlpf/gKxme6E4VlmnDSaL+SXxIT8kuQc9tRgNwqykGUEjbhqE13OqPCyneIWbFDBaSEhGJA36fPGSVtSEe5EFFKWHYhim61Hxv1xmObANRdsqEREsoA/fmiUik+FOUzFYAonz2dEtMIzbZc27Wo/1GDNhGhqF0IfdpR6DSYkEWBfigLK4E5OeEZMbnwS0yjwja6Qwe/+YRMI8P6tIpGjGLeYxkXfzH/OsHFvKlCZMUUYVzMO3SA9WmSmPfom95ge5Me1SMjUbDj44nsJsWEjE/ejJ4Zhk8U884GUxN6ho2NeT/T9ZQUJ+wdG/P2f70w9Im67ZPFvMOROzWqR8e8+7JglNVnv8EjXM8WED5NFvOOpibkZAod866e817LjOSeV9kvxMe8I59IROMf5DvoOxCng7PnTVjvsTFvb3TaFpWi1WbCwQJC4smBPhEPTxEb8/4reqpH9T1EBHcsiC8j3j2tvXIj+7rzusb7OJcQxOHJCS9sblb+QhKu/yxyjUFEbMx7pEeNaVJ1S3/kfzgm5k37FFXU4k/0QonNi9Ed22Fm9Jsno+j3ygUu5h2oduBa8AWGaVkHNcFnBTHv0Cd6Rl+6oH1CaGt71dPKf2zTNLqyuh1ewa5UqHV6Lce1bdO2XafV65SFnxSM2phfjnz6b0VwRaatz0ef+d+gruBXm+TLzZfv/Xb/+0uzLP2caG6B9ilZKa4Yyq/HfyRdEzVjpYTqeteE7zejJL80sfZgVtDy5HaAYBku7E1uJ6pQPz5592pSAUDfockNJW9x4dMo822YIDmNQ1DTGEre4jhF86ZCmpwnDVM09/bnF9BP0dzL3CzGf+4Da/EmczXPRegV4lXmrV34zcotzH0ZLsO04nlU5Rqkhs+jcpWlKL1/HjXeBOHrYmVxChEWpzEUirjj0xgKN7JYuv72aWItA3+8kWASggPT3PLkdr4Rm5FMPLFbgnOLT4nMD+HsaWHi2VNiWxWQ88PECd/bDHj+5/gpIUop4ayVEqorJZy1UkJ1pYSzVkqorjcgrNbK9XKNs/LFVzzh+tY657++8lu8z6MIpT6pabfTP9dcy9XO+50Gx6E4wtL24cXhNm/V4MPwCpsqEU/YAD5Jti7AqHp77li2qfsybcvp3TJLfGIIn1aLRsEorv7N2P5bdCWGkPbp/HHyksw3u45JLOc1nW6TqnJywqfVYDHPNnVlO1gCtPqkQrjO8UmjfcKq3HfYHF7T6ZPrRKSEpQCQQfwVrXFapSqqjJDrk077hFRD46+4c01iRaiUcBuskFv5xQfMFkl2GWHDFPikMatU43XfEiVhm0RKpIwwfwhXDoJS3IbrYY1D6ltCwntOAY59arFZ7zE6s8Vre3UXLM2WEW5dEKtCQ0QCMFugFi8LCc9ciU+2cK8UvuRp9KYWrUnDl2GISAKiy7CmS33qitbJ8XUqXvXqy42Wn6OfwxCRAkQ/hzGL4l1mSbxMTdleFr6iPBcp4cNqlkbM04BZOolAQNiULxjXtBZ/Mxiuql35Anu/TgTdrLw//JvG2TmkNy9Yobt8PmE1ZvsJPweOuyCXq0fqdnmDB5NidoLlrzFjGqbE6MQXZiggIGR88lyifUIX4nqbuF26ZffaPZtc5Rum1MWNS3/RiBTgL+YbXEIln2K1SyzLtvXhatdyRyN+o7WLI5QjcgD5hA2iZTC1oU/1DtG86hZ2GH4L19abveBr9R40Z3WQhGxFlVVREWGH9CnIHN4lfbpFEn6HeZFudF9g4rJm97GEYkQuIJ+wD30CqdG7hE/fcYDEhgcW3OYIFq6urWEJRYh8QC7hGkx5I4oKFq7JS1DhqKbDPGuYSV6GrVeriibkIwoAuYRV8BjqOpxJ1GG+uI4b1xBZ9D14ZQ2WbusYT5jZpntBr2cUAHIJjwGheU70ez1xZr+QEPQ85D4Befg0tMoKhJlDuh8sHIo+yyMsA0K7T3QKsBtxkITvvQzb05ah5Dk03+Fz6Ko/h+K2tPMO29LnCdpSsj+05rA/FI1pdudnTEOOS02949urv+24dJccl+rTjUtnOrfYxhEmO7dgptPe/JCZi735/JDjE36Sj5jj9z72HH/+4zSJxdr+SzTWhvYJo+OuLHRnatErqPcSL7W7vMx3iT5ezFv5zcUs31tg94lK9L3Fu333xC3Gid49faD3h4xPaPHet77Hd8CMTwqqPlLv8dl35rN/j/+Y3Hv8oYi1GJzrb7EWI84nZflrV+qTr6fhr5oRX0Gup6kntZ4mTnOxJkqqlFBdKeGslRKqKyWctVJCdaWEs1ZKqK53Tfiec0jnOw947nO55z4ff+73VJj/fTHmf2+T+d+f5q1d+M36A/YYuvoD9vqa//3a5n/PvT9g38T53/tyOA6ffJPQD7F/6VT6IHvQTqE/bI6fEqKUEiautfpl58vBl85lnbswToEwsiRdWTDbffXXzgZmy7Fc17Wclj64ZyGxhJ4lLbSkDc7E6whndDbCSM3zFlwK77bOmYUdOMJ1hCU5oeR8C+bMDbR2T5nlOabTphY/oAgbbYQlKSHujBLFdTUdh7c+0XbII+0xhLcoS1LCZM+ZGWp90OKvBNRbA3irEKtNBtyDdPzdHgbo1SbJnhU0dovrlS/nFSDGE76Kj7RyXjmf555ohTzvSaGxeZGtOXbAOdOxhGhLUsJEz+zydSmoouPqBZZUxxE2BVV0bImzvh517lp2mnPXPB1L3fJb+zCFKoawTKcM0JY0ZuEk8uy80hRn55FHvXIVHQwbQ6hgSUqY7PmHZLoU/9aHCThywt2YyuDXUzqVZwZnWJLH2vt10rIsavlxeKi9nPCVseQyluj2VHQOqeR02xExHvCYTJlx9YPHy8cDctm3rh8jCI/Jp9DVeJY0Ko1ANPKWH7WqdJbsPdG+W6+jtqBG9pDOJYKQtOS8jtqn2iv5b2qZ/QzOAyYqqfUS/v8L7LqDaiolFFl64VmKJZSUouKZzqdglGzDZO42GF4G591L8y0IS6fRxXW4m45JpfP8/nO5iceQqEL38ER0Nz7T+bgHs3dJS9EFvTfrs9XhUdN6Fy6lJrL2ENnqMPc7yIweCWYu6ybZ6UujGLwD0QuriseO10EfFtTFkYjK1arFEhKZ/YSlzLk4i14ep3lgi9BQOK76dxISuzNMTlg6YQqxoDq3l9TSnmIthbtydOGsch3Ud91WqKUlevSWZWf9sSJbGrjRG0yP0x1ESwM5LMISbLO6+JaGGWxPhJhvE208uNJX7C2IBOxgiwLWUhu7qyAzXQoRDTVEsp+Ogim3cCgSzAmkPf5AYInYP4CeXYgJeVV0jJhVQryEJLr1Mmrm174QM45g6iolJC05gaUX0tIlklAMqFpRa3CbDQ+x++WscfbSJdzSXczIu2bTlu4b918oSza1IYmIkD7dfZpSHNBzHsdx6DlPULXks6fvZBhRtzxL1OST2a5DQMhvZOCzqNBpNOJnwE4QzpUTNhAzYDowLIh5M1WU3rrAYKLhEvXl20zChjEmitGPjWL06a/ExLzHKhhPBarvLx7iQ2212EhUOAyJIaxLst6Hlmxm4yNUJMoPWTCTqeC8d4we5YhOtBFMXDTxVr7Zg8NuKRMb884Gswl6GK4QTfQaG3Gg2uvZQOMQGxGWhLz9AAL7hfiYdzhdohCVYt5rfbFj1ikYrMZH9dsSS23OF3iEeSLmHc3oyfmiEmFm7bvwfUofjsbjCat9QdOsW31eIm9szBtOeIkInFIt9SrGC3ePBt05IN7SId6urb1wb1Y4xsEQgpamYMCg0wZAVIh5j3SvMZ7plkZFxlBvSO91jiVbsJUFP+YdBrjpoFP0LCrEvAOt32oOnOLZjt6Z7C33Woe2pHVEb/L5PX4pO+oQi0zg98EYX1GeCfuqXva73ojNtm3Xamn9JvvcYFcqVJueJUtmSU6Y2bxb8bRzx2IEVyZcjZGpnd0eDF4HB7dn3O01FFabxFgKJJ5bHD0d8YfX4isJaA5WDMUoJVRXSjhrpYTqSglnrZRQXSnhrJUSqutdE85lRkkeZgV9S8TkN5gVlFBqzzQCd7xynYhFkHydUK2YTj/CFM3cYjJVainccyC3/yP+479fQYrmML0/EQWbIIwSJN9e4xTN8RYNiehrpZIDCZJvr72bq4Xl6yRbvaXrq4Wrm70kTP0PC/JF9TZHrT8AAAAASUVORK5CYII=">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    Hello world!
+    <nav>
+        <ul>
+            <li>MyTicTacToe.com</li>
+        </ul>
+    </nav>
+    <div class="gameContainer">
+        <div class="container">
+            <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+        <div class="box bt-0"><span class="boxtext"></span></div>
+        <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+        <div class="box bl-0"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box br-0"><span class="boxtext"></span></div>
+        <div class="box bl-0 bb-0"><span class="boxtext"></span></div>
+        <div class="box bb-0"><span class="boxtext"></span></div>
+        <div class="box bb-0 br-0"><span class="boxtext"></span></div>
+        </div>
+        <div class="gameInfo">
+            <h1>Welcome to MyTicTocToe game</h1>
+            <div>
+                <span class="Info">Turn for X</span>
+                <button id="reset">Reset the game</button>
+            </div>
+            <div class="imgBox">
+                <img src="./images/excited.gif" alt="excited animation"></ing>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
