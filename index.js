@@ -30,7 +30,7 @@ wins.forEach(e =>{
     if((boxtexts[e[0]].innerText=== boxtexts[e[1]].innerText) && (boxtexts[e[1]].innerText=== boxtexts[e[2]].innerText) && (boxtexts [e[0]].innerText!== "")){
         document.querySelector('.Info').innerText = "👑"+ boxtexts[e[0]].innerText +" has won the game"
         isGameOver =true;
-        document.querySelector('.imgBox').getElementsByTagName('img')[0].style.height ="300px"; 
+        document.querySelector('.imgBox').getElementsByTagName('img')[0].style.height ="200px"; 
        document.querySelector('#lineId').classList.add("line")
         // document.querySelector(".line").style.width ="20vw";
  
@@ -75,7 +75,7 @@ reset.addEventListener('click',()=>{
 
      turn= "X"
      isGameOver=false;
-     document.querySelector(".line").style.width ="0vw";
+     document.querySelector(".line").style.width ="0";
      document.getElementsByClassName("Info")[0].innerText =`Turn for "" ${turn} ""`;
      document.querySelector('.imgBox').getElementsByTagName('img')[0].style.height ="0"; 
      document.querySelector('#lineId').classList.remove("line")

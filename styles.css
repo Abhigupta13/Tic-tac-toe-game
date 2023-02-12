@@ -55,9 +55,7 @@ nav ul{
     font-size: 2.5 rem;
 }
 .imgBox{
-    margin-top: 5px;
-    
-   height: 0;
+   height: 0px!important;
     transition: width 1s ease-in-out;
 }
 .br-0{
