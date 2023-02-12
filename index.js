@@ -13,14 +13,14 @@ const changeTurn=()=>{
 
 //Fuction to check win
 var wins = [
-    [0,1,2,5,5,0],
-    [3,4,5,5 ,15,0],
-    [6,7,8,5,25,0],
-    [0,3,6,-5,15,90],
-    [1,4,7,5 ,15,90],
-    [2,5,8,15,15,90],
-    [0,4,8,5,15,45],
-    [2,4,6,5,15,135],
+    [0,1,2,9,29,0],
+    [3,4,5,9 ,29,0],
+    [6,7,8,9,29,0],
+    [0,3,6,-9,29,90],
+    [1,4,7,9 ,29,90],
+    [2,5,8,29,29,90],
+    [0,4,8,9,29,45],
+    [2,4,6,9,29,135],
 ]
 const checkWin =()=>{
     let boxtexts = document.getElementsByClassName('boxtext');
@@ -40,13 +40,13 @@ wins.forEach(e =>{
 })
 
 }
-const mobile=document.querySelector('.screen').addEventListener('click',()=>{
-    wins.forEach(e=>{
-        e[3]+=4;
-        e[4]+=14;
-        console.log(wins);
-    })
-})
+// const mobile=document.querySelector('.screen').addEventListener('click',()=>{
+//     wins.forEach(e=>{
+//         e[3]+=4;
+//         e[4]+=14;
+//         console.log(wins);
+//     })
+// })
 
 // Main Game logic
 // music.play();
