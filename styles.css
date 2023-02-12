@@ -44,8 +44,10 @@ nav ul{
 }
 .Info{
    font-size: 25px; 
+ 
 }
-.gameInfo{
+.gameInfo{ 
+     text-align: center;
     padding: 0 35px;
     font-family: 'Baloo Da 2', cursive;
     }
@@ -53,7 +55,7 @@ nav ul{
     font-size: 2.5 rem;
 }
 .imgBox{
-    display: flex;
+    display: absolute;
    height: 0;
     transition: width 1s ease-in-out;
 }
